@@ -1,0 +1,122 @@
+.DashboardCenter{
+    margin-top:0px;
+    margin-left: 210px;
+    margin-right: 210px;
+    display: flex;
+    flex-direction: column;  
+    background-color:whitesmoke;
+    /* flex:4; */
+}
+
+.DashboardCenterTitleTop{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    margin-right: 106vh;
+    color: #FF9138;
+    text-align:left;
+    flex: none;
+    margin: 0px 8px;
+}
+
+.DashboardCenterTitle{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    margin-right: 98vh;
+    /* margin-bottom: 20px; */
+    color: #FF7506;
+    text-align:center;
+}
+
+.DashboardCenterList{
+    display: flex;
+    justify-content:space-evenly;
+    text-align: center;
+    padding: 5px;
+}
+
+.DashboardCenterItem{
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding:20px 10px;
+    
+}
+
+.DashboardCenterItemFirst{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.DashboardCenterItemFirstIMG{
+    width:50px;
+    height:50px;
+}
+.DashboardCenterItemFirstTitle{
+    margin-left: 15px;
+    text-align:left;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    word-wrap: break-word;
+    padding-right: 50px;
+    width:70px;
+    color: #535261;
+}
+
+.DashboardCenterItemSecond{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.arrowUp{
+    width:6px;
+    height:12px;
+    transform:translateY(-8px);
+    margin-right: 3px;
+}
+
+.DashboardCenterItemSecondNumber{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    margin-left: 10px;
+    color: #535261;
+}
+
+.DashboardCenterItemSecondPercent{
+    background: rgba(255, 149, 1, 0.15);
+    border-radius: 7.18115px;
+    display: flex;
+    align-items: center;
+    margin:17px 0;
+    padding:0 7px;   
+}
+.DashboardCenterItemSecondPercent span{
+        font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    color: #FF9138;
+}
+
+.arrowDown{ 
+    background: rgba(231, 63, 63, 0.15) !important;
+}
+
+.arrowDown span{
+    color:red!important;
+}

@@ -1,0 +1,81 @@
+.container-left{
+    width: 490px;
+    height: 100vh;
+    left: -20px;
+    bottom: 1px;
+    background-color: rgb(238, 237, 237 );
+    position: fixed;
+}
+
+.logo{
+    width: 150px;
+    height: 125px;
+    left: 170px;
+    top: 65px;
+    position: fixed;
+}
+
+.email-form{
+    font-family: Nunito ;
+    font-style: normal;
+    line-height: 27px;
+    position: fixed;
+    text-align: left;
+    width: 400px;
+    left: 45px;
+    top: 200px;
+    padding: 10px 24px;
+}
+
+.email{
+    background: #FFFFFF;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 10px 150px 10px 10px;
+    left: 210px;
+    top: 80px;
+}
+
+.title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 33px;
+    margin-bottom: -60px;
+    margin-right: 40px;
+}
+
+.sentences{
+
+    text-align: center;
+    
+}
+
+.forgot-pass form div button{
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+    padding: 0px 40px;
+    margin: 40px 60px 20px 1%;
+    text-align: center;
+}
+
+.continue{
+    background: #FF9138;
+    color: white;
+}
+
+.cancel{
+    border-color: #FF9138;
+    color: #FF9138;
+    height: 45px;
+    width: 130px;
+    
+}
+
+.container-right{
+    margin-top: 30px;
+    margin-left: 550px;
+    height: 100vh;
+    position: fixed;
+}

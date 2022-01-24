@@ -1,0 +1,219 @@
+.UserInfor{
+    display: flex !important;
+    background-color: whitesmoke ;
+    width: 100%;
+    flex : 4;
+    padding:0 20px;
+    flex-direction: column;  
+}
+
+.userDetailMess{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 30vh;
+    color: #FF9138;
+}
+
+.UserInforDetailandAvatar{  
+    display:flex;
+    margin-right: 20px;
+}
+
+.userInforRight{
+    width: 100%;
+    display: flex;
+    flex-direction:row-reverse;
+    margin-top:20px;
+    align-items:center;
+    justify-content:space-between;      
+}
+
+.UserInforDetailAvatar{
+   width:40px;
+   height:40px;
+}
+
+.UserInforbell{
+    width:20px;
+    height:30px;
+    margin-right: 40px;
+    position: relative;
+}
+.UserInforbellList{
+    position:absolute;
+    left: -58px;
+    top: 46px;
+    overflow-y: scroll;
+    height: 500px;
+    width: 320px;
+    /* White */
+    display:flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    /* Pink shadow */
+    box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
+    border-radius: 10px;
+    
+}
+
+.UserInforbellTitle{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    padding:15px ;
+    text-align: left;
+    color: #FFFFFF;
+    background-color: #FF9138;
+}
+
+.UserInforbellUL{
+    padding:0;
+}
+
+.UserInforbell1{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #BF5805;
+    padding: 14px;
+    text-align: left;
+}
+
+.UserInforbell2{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #535261;
+}
+
+.UserInforDetailAvatarInfor{
+    display:flex;
+    flex-direction: column;
+    margin-left: 12px; 
+}
+
+.UserInforDetailAvatarandInfor{
+    display:flex;
+    
+}
+.helloUser{
+    text-align:left;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #7E7D88;
+}
+
+.UserInforName{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    width: 124px;
+    text-align: left;
+    color: #535261;
+}
+
+.UserMoreDetail{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(219, 219, 219, 0.5);
+    border-radius: 12px;
+    display: flex;
+    padding: 1px ;
+    margin-right:120px;
+    margin-top:100px;
+    
+}
+
+.UserMoreDetailName{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    color: #282739;
+    padding-left: 170px;
+}
+
+.UserMoreDetailIMGandname{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+   
+}
+.UserMoreDetailIMG{
+    position: relative;
+    width: 500px;
+    left: 90px;
+    height:250px;
+}
+
+.UserInforDetailItemS{
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    width: 100%;
+    
+   
+}
+.UserInforDetailItem{
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+    padding:20px 0;  
+}
+
+.UserInforDetailItemName{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #282739;
+}
+
+.UserInforDetailItemValue{
+    margin-top:20px;
+    width: 325px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 0;
+    background: #EAEAEC;
+    border-radius: 6px;
+}
+
+.UserInforDetailItemValue span{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #535261;
+    opacity: 0.5;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+    text-align:left; 
+}

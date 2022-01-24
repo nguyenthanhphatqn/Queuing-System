@@ -1,9 +1,8 @@
-
 import '../LoginForm/loginform.css';
 import logo from '../img/LogoAlta.png';
 import background from '../img/Background.png';
 import eyeflash from '../img/icon/icon-eyeflash.png';
-import { Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 // 
 export const LoginForm = () => {
@@ -12,7 +11,6 @@ export const LoginForm = () => {
         e.preventDefault();
         
     }
-// render(){
     return (
         <div className="login">
             <div className='container-left'>
@@ -49,5 +47,4 @@ export const LoginForm = () => {
         </div>
     );
     }
-// }
 
