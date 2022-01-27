@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.dashboad{
+    display: flex;
+    position: relative;
+    width: 1440px;
+    background: #F7F7F7;
+    border-radius: 16px;
+}
+
+
+.dashboadmiddle{
+    flex: 2.9  1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

@@ -1,0 +1,84 @@
+.chart{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    margin-top:20px;
+    padding:30px 10px 90px 10px;
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+.ChartTitle{
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    color: #282739;
+    margin-left: 200px;
+}
+.chartItemFirst{
+    display: flex;
+    justify-content:space-between;
+}
+.chartItemFirstTitle{
+    display: flex;
+    flex-direction: column;
+
+}
+.ChartTitleDate{
+    text-align: left;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #A9A9B0;
+    margin-left: 200px;
+}
+
+.chartItemDropdown{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-right: 300px;
+}
+.chartDropdownTitle{
+     font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #282739;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+
+.Dropdown-control{
+    background: #FFFFFF !important;
+    border: 1.5px solid #D4D4D7 !important;
+    border-radius: 8px !important;
+}
+
+.Dropdown-arrow{
+    border-color: #FF7506 transparent #FF7506 !important;
+    top:17px !important;
+}
+.Dropdown-menu {
+    border-radius: 8px !important;
+    top:110% !important;
+}
+.Dropdown-option:hover{
+    background: #FFF2E7 !important;
+}
+
+.Dropdown-option.is-selected{
+    background: #FFF2E7 !important;
+}
+
+.chartItemChart{
+    margin-top:70px;
+    margin-left: -20px;
+}

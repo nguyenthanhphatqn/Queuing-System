@@ -8,10 +8,23 @@ import iconCircle86 from '../img/icon/icon-circle86.png'
 import iconEquipmentOrange from '../img/icon/icon-equipmentorange.png'
 import iconServiceBlue from '../img/icon/icon-serviceblue.png'
 import iconNumberGreen from '../img/icon/icon-numbergreen.png'
-import Datepicker from '../img/DatePicker.png'
 import { Link  } from 'react-router-dom';
+import DatePicker from 'sassy-datepicker';
 
 export default function Menubar() {
+      
+      const [date, setDate] = useState(new Date());
+      const onChange = newDate => {
+          console.log(`New date selected - ${newDate.toString()}`);
+          setDate(newDate);
+        };
+  
+        window.process = {
+          env: {
+            NODE_ENV: 'development',
+         },
+       };
+  
     return (
         <div className="Menubar1">
 
@@ -177,7 +190,7 @@ export default function Menubar() {
                       </div>
                 </div>
             </div>             
-            <img src={Datepicker} alt="" className='datepicker' />
+            <DatePicker className="Datapicker" onChange={onChange} selected={date} />
         </div>
     )
 }

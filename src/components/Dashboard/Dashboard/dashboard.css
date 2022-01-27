@@ -25,6 +25,10 @@
     margin-top: 20px;
     width:100%;
 }
+.MenuBarDetailItem:hover{
+    background: #FFF2E7;
+    color: #FF7506;
+}
 .MenuBarDetailItem{
     display: flex;
     width: 100%;
@@ -49,6 +53,32 @@
     height:16px;
     margin-top: 3px;
     margin-left:20px;
+}
+.systemDropdown{
+    position: fixed;
+    bottom: 155px;
+    left: 200px;
+    z-index: 1;
+    background: #FFFFFF;
+    padding: 0;
+    border-radius: 0px 12px 0px 0px;
+    
+}
+.systemDropdown li{
+    list-style: none;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0px 8px;
+    color: #7E7D88;
+    padding:10px ;
+    
+}
+.systemDropdown li:hover {
+    background: #FFF2E7;
+    color:#FF7506
 }
 
 .MenuBarDetailItemName{

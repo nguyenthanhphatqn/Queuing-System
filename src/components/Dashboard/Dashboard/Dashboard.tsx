@@ -14,13 +14,13 @@ import iconLogout from '../img/icon/icon-logout.png';
     export default function Dashboard() {
         const menubars = document.querySelectorAll('.MenuBarDetailItem')
      
-    menubars.forEach( menubar => {
-      menubar.onclick = function () {
-          document.querySelector('.MenuBarDetailItem.activeMenubar').classList.remove('activeMenubar')   
-          this.classList.add('activeMenubar')                   
-            }
-        }
-    )          
+    // menubars.forEach( menubar => {
+    //   menubar.onclick = function () {
+    //       document.querySelector('.MenuBarDetailItem.activeMenubar').classList.remove('activeMenubar')   
+    //       this.classList.add('activeMenubar')                   
+    //         }
+    //     }
+    // )          
       const [show ,setShow] = useState(false) 
       const handleShow = () =>{
           setShow(!show)

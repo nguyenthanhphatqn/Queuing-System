@@ -9,6 +9,9 @@ import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import UserInfor from './components/Dashboard/UserInformation/UserInfor';
 import DashboardCenter from './components/Dashboard/DashboardCenter/DashboardCenter';
+import Chart from './components/Dashboard/Chart/Chart';
+import ChartWeek from './components/Dashboard/ChartWeek/ChartWeek';
+import DashboardGeneral from './components/Dashboard/DashBoardGeneral/DashBoardGeneral';
 
 function App() {
   return (
@@ -20,9 +23,13 @@ function App() {
           <Route path="/reset" element={<ResetPass/>} />
           <Route path="/login1" element={<Login1/>} />
           <Route path="/loginerror" element={<LoginError/>} />
-          <Route path="/dashboard" element={<><Menubar/><Dashboard/></>} />
+          <Route path="/dashboard" element={<><Dashboard/><Menubar/><DashboardCenter/><ChartWeek/></>} />
           <Route path="/user" element={<><Dashboard/><UserInfor/></>} />
-          <Route path="/center" element={<DashboardCenter/>} />
+          {/* <Route path="/center" element={<DashboardCenter/>} />
+          <Route path="/top" element={<Chart/>} />
+          <Route path="/bot" element={<ChartWeek/>} />
+          <Route path="/general" element={<DashboardGeneral/>} /> */}
+          <Route path="/bot" element={<ChartWeek/>} />
         </Routes>
     </div>
     </BrowserRouter> 

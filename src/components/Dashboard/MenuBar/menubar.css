@@ -4,7 +4,8 @@
     /* background-color:white; */
     flex-direction:column;
     align-items:center;
-    padding:10px 20px 0px 160vh ;
+    margin-left: 165vh;
+    padding:10px 20px 0px 1vh ;
     position: fixed;
     width: 300px; 
     background: #FFFFFF;
@@ -199,10 +200,4 @@
 
 .menubarFix2{
     transform:translateX(-10px);
-}
-.datepicker{
-width: 320px;
-height: 290px;
-left: 24px;
-top: 445px;
 }
