@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import '../ChartWeek/chartweek.css'
+import '../Chart/chart.css'
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
@@ -14,14 +14,13 @@ export default function Chart() {
     
     },
     {
-        name: '',
-        value: 4300,
-        
-      },
-      
-    {
       name: '13',
       value: 3500,
+      
+    },
+    {
+      name: '7',
+      value: 5800,
       
     },
     {
@@ -134,7 +133,7 @@ export default function Chart() {
         'Ngày', 'Tuần', 'Tháng'
       ];
 
-      const handleDropdownValue = (e)=>{
+      const handleDropdownValue = (e:any)=>{
             
            if(e.value === 'Ngày'){
              setDataChart(data)
@@ -156,7 +155,7 @@ export default function Chart() {
                     <span className="ChartTitle">
                          Bảng thống kê theo tháng
                     </span>
-                    <span className="ChartTitleDate">
+                    <span className="ChartTItleDate">
                         Tháng 11/2021
                     </span>
                 </div>
@@ -175,16 +174,16 @@ export default function Chart() {
 
           <div className="chartItemChart">
 
-            <ResponsiveContainer width="80%" aspect={ 4.5/2.5}>
+            <ResponsiveContainer width="100%" aspect={ 8.5/2.5}>
                 <AreaChart
                 width={500}
                 height={400}
                 data={dataChart}
                 margin={{
                     top: 10,
-                    right: 0,
-                    left: 220,
-                    bottom: 350,
+                    right: 30,
+                    left: 0,
+                    bottom: 0,
                 }}
                 >
                 <defs>

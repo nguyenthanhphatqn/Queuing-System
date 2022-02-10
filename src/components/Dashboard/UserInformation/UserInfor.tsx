@@ -1,5 +1,6 @@
 import React from 'react'
 import '../UserInformation/userinfor.css';
+import SlideBar from '../SlideBar/SlideBar'
 import iconbell from '../img/icon/icon-bell.png'
 import iconuser from '../img/icon/icon-user.png'
 import users from '../img/User.png'

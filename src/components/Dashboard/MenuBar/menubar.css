@@ -1,71 +1,61 @@
 .Menubar1{
     flex:1;
     display:flex;
-    /* background-color:white; */
+    background-color:white;
     flex-direction:column;
     align-items:center;
-    margin-left: 165vh;
-    padding:10px 20px 0px 1vh ;
-    position: fixed;
-    width: 300px; 
-    background: #FFFFFF;
-    /* Dropdown */
+    padding:10px 20px 0px 30px ;
     box-shadow: 0px 4px 6px rgba(219, 219, 219, 0.5);
-    border-radius: 16px 0px 0px 16px;
+    border-radius: 8px 0px 0px 8px;
 }
 
 .sdp {
-    --theme-color: #FF7506!important;
+    --theme-color: #FF7506!important; 
     --disabled-color:#FF9138 !important;
-    
-  }
+}
 
 .sdp--month-name{
     color:#FF7506 !important;
 }
+
 .sdp--square-btn__shadowed{
     color:#FF7506 !important;
 }
 
-.Menubar-User{
+.Datapicker{
+}
+
+.MenubarUser{
     display:flex;
     align-items: center;
 }
-.Menubar-Bell{
-    width:30px;
-    height:30px;
-    margin-right: 12px;
+.MenubarBell{
+    width:50px;
+    height:40px;
+    margin-right: 30px;
 }
 
-.MenuBar-User-Information{
-    display:flex;
-}
-
-.MenuBar-User-Image{
+.MenuBarUserImage{
     width:40px;
     height:40px;
 }
 
-.MenuBar-User-Detail{
+.MenuBarUserInformation{
     display:flex;
     flex-direction: column;
     margin-left: 10px;
 }
 
-.menuBar-Hello{
+.menuBarHello{
     font-family: Nunito;
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 18px;
     color: #7E7D88;
-    text-align: left;
 }
-.text-linkm{
-    color: inherit;
-    text-decoration: inherit;
-}
-.menuBar-Username{
+
+.menuBarUsername{
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
@@ -98,14 +88,15 @@
     width:100%;
     justify-content:space-between;
 }
+
 .menuBarOverViewItem{
     display: flex;
     background: #FFFFFF;
     box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
     border-radius: 12px;
-    padding: 1px;
-    margin :10px 0;  
-    }
+    padding: 10px;
+    margin :10px 0;   
+}
 
 .menuBarOverViewItemCircle{
     width:58px;
@@ -118,9 +109,9 @@
     padding:0 6px;
 }
 
-.menuBarOverViewItemFirstIcon{
+.menuBarOverViewItemFirstMinotor{
     width:14px;
-    height:14px;
+    height:14px; 
 }
 
 .menuBarOverViewItemFirstNumber{
@@ -132,11 +123,10 @@
     color: #535261;
 }
 
-.menuBarOverViewItemIcon{
+.menuBarOverViewItemNumberMonitor{
     display:flex;
     justify-content:space-between;
 }
-
 
 .menubarItemtextMonitor{
     margin-left: 5px;
@@ -151,7 +141,8 @@
 .menuBarOverViewItemSecond{
     display:flex;
     flex-direction: column;
-    justify-content: space-around;   
+    justify-content: space-around;
+    
 }
 
 .menuBarpointandnumber{

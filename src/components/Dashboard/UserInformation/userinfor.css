@@ -1,10 +1,18 @@
 .UserInfor{
     display: flex !important;
     background-color: whitesmoke ;
-    width: 100%;
+    width: 100%;   
     flex : 4;
+    position: relative;
     padding:0 20px;
-    flex-direction: column;  
+    flex-direction: column;
+    padding-bottom: 100px;
+    
+}
+
+
+.UserInforDetail{
+    
 }
 
 .userDetailMess{
@@ -13,11 +21,11 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
+    color: #FF9138;
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 0px 30vh;
-    color: #FF9138;
+    margin: 0px 8px
 }
 
 .UserInforDetailandAvatar{  
@@ -31,16 +39,15 @@
     flex-direction:row-reverse;
     margin-top:20px;
     align-items:center;
-    justify-content:space-between;      
+    justify-content:space-between;             
 }
 
 .UserInforDetailAvatar{
-   width:40px;
-   height:40px;
+    width:45px;height:44px;
 }
 
 .UserInforbell{
-    width:20px;
+    width:30px;
     height:30px;
     margin-right: 40px;
     position: relative;
@@ -52,15 +59,47 @@
     overflow-y: scroll;
     height: 500px;
     width: 320px;
-    /* White */
     display:flex;
     flex-direction: column;
     background: #FFFFFF;
-    /* Pink shadow */
     box-shadow: 2px 2px 15px rgba(70, 64, 67, 0.1);
     border-radius: 10px;
+    display: none;
     
 }
+.UserInforbell:hover .UserInforbellList {
+    display:flex;
+}
+
+.UserInforbell::before{
+    content: '';
+    position: absolute;
+    top:100%;
+    width: 50px;
+    height: 20px;
+    
+}
+
+
+::-webkit-scrollbar {
+    width: 4px;
+    border-radius:4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #FFC89B; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
 
 .UserInforbellTitle{
     font-family: Nunito;
@@ -69,7 +108,6 @@
     font-size: 20px;
     line-height: 30px;
     padding:15px ;
-    text-align: left;
     color: #FFFFFF;
     background-color: #FF9138;
 }
@@ -85,8 +123,6 @@
     font-size: 16px;
     line-height: 24px;
     color: #BF5805;
-    padding: 14px;
-    text-align: left;
 }
 
 .UserInforbell2{
@@ -101,13 +137,13 @@
 .UserInforDetailAvatarInfor{
     display:flex;
     flex-direction: column;
-    margin-left: 12px; 
+    margin-left: 12px;
 }
 
 .UserInforDetailAvatarandInfor{
-    display:flex;
-    
+    display:flex;    
 }
+
 .helloUser{
     text-align:left;
     font-family: Nunito;
@@ -118,6 +154,7 @@
     color: #7E7D88;
 }
 
+
 .UserInforName{
     font-family: Nunito;
     font-style: normal;
@@ -126,18 +163,18 @@
     line-height: 24px;
     width: 124px;
     text-align: left;
-    color: #535261;
+    color: #535261;  
 }
+
 
 .UserMoreDetail{
     background: #FFFFFF;
     box-shadow: 0px 2px 6px rgba(219, 219, 219, 0.5);
     border-radius: 12px;
     display: flex;
-    padding: 1px ;
-    margin-right:120px;
+    padding:30px ;
+    margin-right:50px;
     margin-top:100px;
-    
 }
 
 .UserMoreDetailName{
@@ -148,9 +185,8 @@
     line-height: 36px;
     display: flex;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 20px;
     color: #282739;
-    padding-left: 170px;
 }
 
 .UserMoreDetailIMGandname{
@@ -160,27 +196,31 @@
     justify-content:center;
    
 }
+
 .UserMoreDetailIMG{
     position: relative;
-    width: 500px;
-    left: 90px;
+    width:250px;
     height:250px;
+}
+.UserinforCamera{
+    position: absolute;
+    top: 61%;
+    left: 18%;
 }
 
 .UserInforDetailItemS{
     margin-left: 40px;
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;
-    width: 100%;
-    
-   
+    justify-content:space-between;
+    width: 100%; 
 }
+
 .UserInforDetailItem{
     display: flex;
     flex-direction: column;
     text-align:left;
-    padding:20px 0;  
+    padding:20px 0;
 }
 
 .UserInforDetailItemName{
@@ -194,7 +234,7 @@
 
 .UserInforDetailItemValue{
     margin-top:20px;
-    width: 325px;
+    width: 384px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -215,5 +255,5 @@
     order: 0;
     flex-grow: 0;
     margin: 0px 10px;
-    text-align:left; 
-}
+    text-align:left;
+    }

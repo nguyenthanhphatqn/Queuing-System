@@ -11,6 +11,8 @@ import iconNumberGreen from '../img/icon/icon-numbergreen.png'
 import { Link  } from 'react-router-dom';
 import DatePicker from 'sassy-datepicker';
 
+
+
 export default function Menubar() {
       
       const [date, setDate] = useState(new Date());
@@ -27,21 +29,20 @@ export default function Menubar() {
   
     return (
         <div className="Menubar1">
-
-            <div className="Menubar-User">
-                  <div className="Menubar-Bell">
+            <div className="MenubarUser">
+                  <div className="MenubarBell">
                       <img src={iconBell} alt="" />
                   </div>
-                  <div className="MenuBar-User-Information">
-                      <div className="MenuBar-User-Image">
+                  <div className="MenuBarUserImage">
                           <img src={iconUser} alt="" />
-                      </div>
+                  </div>
+                  <div className="MenuBarUserInformation"> 
                       <Link to="/user" className="text-linkm">
-                      <div className="MenuBar-User-Detail">
-                          <span className="menuBar-Hello">
+                      <div className="MenuBarUserDetail">
+                          <span className="menuBarHello">
                                 Xin Chào
-                          </span>
-                          <span className="menuBar-Username">
+                          </span><br></br>
+                          <span className="menuBarUsername">
                               Lê Quỳnh Ái Vân
                           </span>
                       </div>
