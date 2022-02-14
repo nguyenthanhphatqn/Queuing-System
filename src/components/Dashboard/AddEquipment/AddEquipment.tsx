@@ -45,7 +45,7 @@ export default function AddEquipment() {
                     <div className="ServiceInforTitle">
                         <span className="ServiceTItle">Thiết bị</span>   
                         <span className="Servicepointer">{'>'}  </span>
-                        <span className="ServiceTItle">Danh sách thiết bị</span>   
+                        <Link to="/equipment"><span className="ServiceTItle">Danh sách thiết bị</span> </Link>  
                         <span className="Servicepointer">{'>'}  </span>
                         <span className="ListService">Thêm thiết bị</span>   
                     </div>
@@ -156,7 +156,7 @@ export default function AddEquipment() {
                                             <div className="AddService_Container__Inputs__ServiceCode__Title">
                                             Dịch vụ sử dụng: <span>*</span>
                                             </div>
-                                            <div className="AddService_Container__Inputs__ServiceCode__Input">
+                                            <div className="AddService_Container__Inputs__ServiceCode__Input1">
                                                 <input type="text" value={serviceEquipment} onChange={ e=> setServiceEquipment(e.target.value)} 
                                                         placeholder="Nhập dịch vụ sử dụng"
                                                 />
@@ -180,7 +180,7 @@ export default function AddEquipment() {
 
 
                     <div className="AddService_Button">
-                <div className="AddService_Button__cancle">
+                <div className="AddService_Button__cancel">
                    <Link to="/equipment"><button>Hủy bỏ</button></Link>
                 </div>
                 <div className="AddService_Button__addService">

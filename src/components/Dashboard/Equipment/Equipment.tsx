@@ -175,18 +175,18 @@ return (
                 <div className="ServiceDropdownsSearchTItle">
                          Danh sách thiết bị
                 </div>          
-                <div className="ServiceDropdownsSarch">
+                <div className="ServiceDropdownsSearch">
                         <div className="ServiceDropdownsItem1">
-                                <div className="ServiceDropdownsSarchFirst">
-                                        <div className="ServiceDropdownsSarchFirstName">Trạng thái hoạt động</div>
+                                <div className="ServiceDropdownsSearchFirst">
+                                        <div className="ServiceDropdownsSearchFirstName">Trạng thái hoạt động</div>
                                         <div className="ServiceDropdowns_1">
                                         <Dropdown options={options}       
                                                 onChange={(e)=>handleDropdownValue(e)} 
                                                 value={defaultOption} placeholder="Select an option" />
                                         </div>
                                 </div>
-                                <div className="ServiceDropdownsSarchFirst">
-                                        <div className="ServiceDropdownsSarchFirstName">Trạng thái kết nối</div>
+                                <div className="ServiceDropdownsSearchFirst">
+                                        <div className="ServiceDropdownsSearchFirstName">Trạng thái kết nối</div>
                                         <div className="ServiceDropdowns_1">
                                         <Dropdown options={optionsConnect}                
                                                 onChange={(e)=>handleDropdownValue(e)} 
@@ -195,8 +195,8 @@ return (
                                 </div>
                                 
                         </div>
-                        <div className="ServiceDropdownsSarchFirst  ServiceDropdownsSarchFirst_input">
-                                <div className="ServiceDropdownsSarchFirstName choseKey">Từ khóa</div>
+                        <div className="ServiceDropdownsSearchFirst  ServiceDropdownsSearchFirst_input">
+                                <div className="ServiceDropdownsSearchFirstName choseKey">Từ khóa</div>
                                 <div className="ServiceDropdowns_input">
                                         <input placeholder="Nhập từ khóa" value={search} onChange={(e)=> setSearch(e.target.value)}/>
                                         <div className="seacrchlogo">
@@ -266,7 +266,7 @@ return (
                                         <span> <Link to="/equipment/detail">Chi tiết</Link>  </span>      
                                 </div>
                                 <div className="ServiceTableDetailTitles_Item">
-                                        <span> <a href="">Cập nhật</a>  </span>      
+                                        <span> <Link to="/equipment/detail/updateequipment">Cập nhật</Link>  </span>      
                                 </div>
                         </div>                     
                         )

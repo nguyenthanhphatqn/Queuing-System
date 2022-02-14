@@ -64,7 +64,7 @@ export default function SlideBar() {
                         </span>
                     </div> 
                   </Link>
-                  <Link to="/number-level"><div className="slibarDetailItem">
+                  <Link to="/number"><div className="slibarDetailItem">
                       <div className="slibarDetailItemimg">
                           <img src={iconNumber} alt="" />
                       </div>

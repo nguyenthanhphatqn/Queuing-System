@@ -1,0 +1,65 @@
+.UpdateEquipment{
+    display: flex;
+    flex: 4 1;
+    flex-direction: column;
+    padding: 20px;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.UpdateEquipment__Service_use{
+    background: #FFFFFF;
+    margin-top: 10px;
+    border: 1.5px solid #FFAC6A;
+    box-sizing: border-box;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 40px 40px 40px;
+}
+
+.UpdateEquipment__Service_use__item{
+    background: #FFAC6A;
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 12px;
+    color: white;
+    margin:  5px;
+}
+
+.UpdateEquipment__Service_use__item span:nth-child(1){
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+.UpdateEquipment__Service_use__item span:nth-child(2){
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 19px;
+    cursor: pointer;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.UpdateEquippment .AddService_Button__addService button {
+    padding-left: 33px;
+    padding-right: 33px;
+}

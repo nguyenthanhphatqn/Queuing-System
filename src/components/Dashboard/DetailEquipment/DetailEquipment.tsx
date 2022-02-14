@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 import EditSquare from '../img/icon/icon-editsquare.png'
 
 
-export default function DetailEquiment() {
+export default function DetailEquipment() {
   return <div className="DetailEquiment">
 
                 <div className="ServiceInfor">
@@ -14,7 +14,7 @@ export default function DetailEquiment() {
                 <div className="ServiceInforTitle">
                     <span className="ServiceTItle">Thiết bị</span>   
                     <span className="Servicepointer">{'>'}  </span>
-                    <span className="ServiceTItle">Danh sách thiết bị</span>   
+                    <Link to="/equipment"><span className="ServiceTItle">Danh sách thiết bị</span></Link>   
                     <span className="Servicepointer">{'>'}  </span>
                     <span className="ListService">Chi tiết thiết bị</span>   
                 </div>

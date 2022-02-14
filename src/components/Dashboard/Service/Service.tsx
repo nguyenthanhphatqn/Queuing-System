@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import Dropdown, { Option } from 'react-dropdown';
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
-import Vector from '../img/icon/icon-nextarrow.png'
+import Vector from '../img/icon/icon-arrowright.png'
 import addSquare from '../img/icon/icon-addsquare.png'
 import ChoosePage from '../ChoosePage/ChoosePage'
 
@@ -106,12 +106,13 @@ export default function Service() {
                 }       
            }
         const [startDate, setStartDate] = useState<Date | null>(new Date());
+        const [endDate, setEndDate] = useState<Date | null>(new Date());
         const [search , setSeatch] = useState('')
     return (
         <div className="Service">
             <div className="ServiceInfor">
                 <div className="ServiceInforTitle">
-                      <span className="ServiceTItle">Dịc vụ</span>   
+                      <span className="ServiceTItle">Dịch vụ</span>   
                       <span className="Servicepointer">{'>'}  </span>
                       <span className="ListService">Danh sách dịch vụ</span>   
                 </div>
@@ -123,28 +124,28 @@ export default function Service() {
             <div className="ServiceDropdownsSearchTItle">
                         Quản lý dịch vụ
             </div>   
-            <div className="ServiceDropdownsSarch">
+            <div className="ServiceDropdownsSearch">
                     <div className="ServiceDropdownsItem1">
-                            <div className="ServiceDropdownsSarchFirst">
-                                    <div className="ServiceDropdownsSarchFirstName">Trạng thái hoạt động</div>
+                            <div className="ServiceDropdownsSearchFirst">
+                                    <div className="ServiceDropdownsSearchFirstName">Trạng thái hoạt động</div>
                                     <div className="ServiceDropdowns_1">
                                     <Dropdown options={options}                                           
                                             onChange={(e)=>handleDropdownValue(e)} 
                                             value={defaultOption} placeholder="Select an option" />
                                     </div>
                             </div>
-                            <div className="ServiceDropdownsSarchFirst">
-                                    <div className="ServiceDropdownsSarchFirstName chooseTime">Chọn thời gian</div>
+                            <div className="ServiceDropdownsSearchFirst">
+                                    <div className="ServiceDropdownsSearchFirstName chooseTime">Chọn thời gian</div>
                                     <div className="ServiceDropdowns_1">                                 
                                         <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
                                          
                                                  <img src={Vector} alt="" />                                      
-                                        <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />                                                                  
+                                        <DatePicker selected={endDate} onChange={(date) => setEndDate(date)} />                                                                  
                                     </div>
                             </div>
                     </div>
-                    <div className="ServiceDropdownsSarchFirst  ServiceDropdownsSarchFirst_input">
-                            <div className="ServiceDropdownsSarchFirstName choseKey">Từ khóa</div>
+                    <div className="ServiceDropdownsSearchFirst  ServiceDropdownsSearchFirst_input">
+                            <div className="ServiceDropdownsSearchFirstName choseKey">Từ khóa</div>
                             <div className="ServiceDropdowns_input">
                                     <input placeholder="Nhập từ khóa" value={search} onChange={(e)=> setSeatch(e.target.value)}/>
                                     <div className="seacrchlogo">
@@ -191,17 +192,17 @@ export default function Service() {
                                         <span> {item.stateService}</span>      
                                 </div>
                                 <div className="ServiceTableDetailTitles_Item">
-                                        <span> <Link to="/service/detail-service">Chi tiết </Link> </span>      
+                                        <span> <Link to="/service/detailservice">Chi tiết</Link> </span>      
                                 </div>
                                 <div className="ServiceTableDetailTitles_Item">
-                                        <span> <a href="">Cập nhật</a>  </span>      
+                                        <span> <Link to="/service/detailservice/updateservice">Cập nhật</Link>  </span>      
                                 </div>
                         </div>
                          )     
                 }              
             </div>     
             </div>
-                <Link to="/service/add-service"> <div className="ServiceAdd">
+                <Link to="/service/addservice"> <div className="ServiceAdd">
                     <div className="ServiceAddIMG">
                         <img src={addSquare} alt="" />  
                     </div>

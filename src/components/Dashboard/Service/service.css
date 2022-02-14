@@ -66,7 +66,7 @@
     margin: 0px 8px;
 }
 
-.ServiceDropdownsSarch{
+.ServiceDropdownsSearch{
     margin-bottom:10px;
 }
 
@@ -94,7 +94,7 @@
     line-height: 36px;
     color: #FF7506;
 }
-.ServiceDropdownsSarchFirstName{
+.ServiceDropdownsSearchFirstName{
     font-family: Nunito;
     font-style: normal;
     font-weight: 600;
@@ -104,11 +104,11 @@
     color: #282739;
 }
 
-.ServiceDropdownsSarchFirst{
+.ServiceDropdownsSearchFirst{
     width:35%;   
 }
 
-.ServiceDropdownsSarch{
+.ServiceDropdownsSearch{
     display: flex;
     justify-content:space-between;
 }
@@ -119,13 +119,16 @@
     align-items:center  
 }
 
-.ServiceDropdownsSarchFirst:first-child{
+.ServiceDropdownsSearchFirst:first-child{
     margin-right: 20px;
 }
 
 .ServiceDropdowns_input input{   
     padding: 10px 40px 10px 10px;
-    width:300px
+    width:300px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 1.5px solid #D4D4D7;
 }
 
 .ServiceDropdowns_input{
@@ -244,6 +247,9 @@
     width:150px;
     color: #A9A9B0 !important;
     padding: 10px 10px 10px 31px;
+    border-radius: 8px;
+    border: 1.5px solid #D4D4D7;
+    box-sizing: border-box;
 }
 .react-datepicker__input-container {
     position: relative;
@@ -285,7 +291,7 @@
 }
 
 .chooseTime{
-    transform: translateY(7px);
+    /* transform: translateY(7px); */
 }
 
 .choseKey{
