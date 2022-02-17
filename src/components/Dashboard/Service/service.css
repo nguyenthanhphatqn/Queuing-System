@@ -1,6 +1,6 @@
 .Service{
     display: flex;
-    flex: 4;
+    flex: 5 1;
     flex-direction: column;
     padding:20px;
     background-color:whitesmoke;

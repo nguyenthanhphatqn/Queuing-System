@@ -21,6 +21,9 @@ import AddService from './components/Dashboard/AddService/AddService';
 import UpdateService from './components/Dashboard/UpdateService/UpdateService';
 import Number from './components/Dashboard/Number/Number';
 import DetailNumber from './components/Dashboard/DetailNumber/DetailNumber';
+import AddNumber from './components/Dashboard/AddNumber/AddNumber';
+import Report from './components/Dashboard/Report/Report';
+import AddRoleManageMent from './components/Dashboard/AddRoleManagement/AddRoleManagement';
 
 function App() {
   const [dataChild , setDataChild] = useState('')
@@ -56,7 +59,10 @@ function App() {
           <Route  path={'/service/detailservice/updateservice' } element={<><SlideBar /><UpdateService /></>}></Route>
           <Route  path={'/number' } element={<><SlideBar /><Number parentCallbackNL={MessageFromNumberLevel}/></>}></Route>
           <Route  path={'/number/detailnumber' } element={<><SlideBar /><DetailNumber value={messageNumberLevel}/></>}></Route>
+          <Route  path={'/number/addnumber' } element={<><SlideBar /><AddNumber/></>}></Route>
+          <Route  path={'/report' } element={<><SlideBar /><Report /></>}></Route>
           <Route  path={'/rolemanagement' } element={<><SlideBar /><RoleManagement parentCallback={callbackFunction} /></>}></Route>
+          <Route  path={'/rolemanagement/addrole' } element={<><SlideBar /><AddRoleManageMent /></>}></Route>
         </Routes>
     </div>
     </BrowserRouter> 
