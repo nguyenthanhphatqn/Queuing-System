@@ -93,10 +93,10 @@ export default function SlideBar() {
             <Link to="/rolemanagement">
               <li>Quản lý vai trò</li>
             </Link>
-            <Link to="/user-list">
+            <Link to="/userlist">
               <li>Quản lý tài khoản</li>
             </Link>
-            <Link to="/system/user-diary">
+            <Link to="/userdiary">
               <li>Nhật ký người dùng</li>
             </Link>
           </ul>

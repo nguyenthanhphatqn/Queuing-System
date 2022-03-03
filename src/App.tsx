@@ -25,6 +25,7 @@ import AddNumber from './components/Dashboard/AddNumber/AddNumber';
 import Report from './components/Dashboard/Report/Report';
 import AddRoleManageMent from './components/Dashboard/AddRoleManagement/AddRoleManagement';
 import UpdateRole from './components/Dashboard/UpdateRole/UpdateRole';
+import UserList from './components/Dashboard/UserList/UserList';
 
 function App() {
   const [dataChild , setDataChild] = useState('')
@@ -65,6 +66,7 @@ function App() {
           <Route  path={'/rolemanagement' } element={<><SlideBar /><RoleManagement parentCallback={callbackFunction} /></>}></Route>
           <Route  path={'/rolemanagement/addrole' } element={<><SlideBar /><AddRoleManageMent /></>}></Route>
           <Route  path={'/rolemanagement/updaterole' } element={<><SlideBar /><UpdateRole value={dataChild}/></>}></Route>
+          <Route  path={'/userlist' } element={<><SlideBar /><UserList /></>}></Route>
         </Routes>
     </div>
     </BrowserRouter> 

@@ -4,8 +4,7 @@ import { Link } from "react-router-dom";
 import BellandUser from "../BellAndUser/BellAndUser";
 
 import { connect } from "react-redux";
-
-// import { fetchDataChart } from "../../redux/DatAlta/DataAltaActions";
+// import { fetchDataChart } from "../redux/DataAlta/DataAltaActions";
 
 function UpdateRole({ dataTableRedux, fetchDataChart }: any) {
   useEffect(() => {
