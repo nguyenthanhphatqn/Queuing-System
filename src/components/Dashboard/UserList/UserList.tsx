@@ -10,7 +10,7 @@ import prevArrow from "../img/icon/icon-previousarrow.png";
 import nextArrow from "../img/icon/icon-nextarrow.png";
 import ReactPaginate from "react-paginate";
 
-// import {fetchDataChart} from '../../redux/DatAlta/DataAltaActions'
+// import {fetchDataChart} from '../../../redux/DataAlta/DataAltaActions'
 
 function UserList({ dataTableRedux, fetchDataChart }: any) {
   useEffect(() => {
