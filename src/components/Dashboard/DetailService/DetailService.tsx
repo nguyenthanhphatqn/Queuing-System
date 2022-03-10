@@ -12,7 +12,7 @@ import backSquare from "../img/icon/icon-backsquare.png";
 
 import "react-datepicker/dist/react-datepicker.css";
 
-// import {connect} from 'react-redux';
+import {connect} from 'react-redux';
 
 // import {fetchDataChart} from '../../redux/DatAlta/DataAltaActions'
 export default function DetailService({ dataTableRedux, fetchDataChart }: any) {

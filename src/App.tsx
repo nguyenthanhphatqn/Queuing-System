@@ -26,6 +26,7 @@ import Report from './components/Dashboard/Report/Report';
 import AddRoleManageMent from './components/Dashboard/AddRoleManagement/AddRoleManagement';
 import UpdateRole from './components/Dashboard/UpdateRole/UpdateRole';
 import UserList from './components/Dashboard/UserList/UserList';
+import UserDiary from './components/Dashboard/UserDiary/UserDiary';
 
 function App() {
   const [dataChild , setDataChild] = useState('')
@@ -67,6 +68,7 @@ function App() {
           <Route  path={'/rolemanagement/addrole' } element={<><SlideBar /><AddRoleManageMent /></>}></Route>
           <Route  path={'/rolemanagement/updaterole' } element={<><SlideBar /><UpdateRole value={dataChild}/></>}></Route>
           <Route  path={'/userlist' } element={<><SlideBar /><UserList /></>}></Route>
+          <Route  path={'/userdiary' } element={<><SlideBar /><UserDiary/></>}></Route>
         </Routes>
     </div>
     </BrowserRouter> 
