@@ -122,7 +122,6 @@ function UserDiary({ dataTableRedux, fetchDataChart }: any) {
   const changePage = ({ selected }: any) => {
     setpageNumber(selected);
   };
-  /////
 
   return (
     <div className="UserDiary">

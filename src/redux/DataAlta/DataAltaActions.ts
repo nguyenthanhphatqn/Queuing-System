@@ -122,7 +122,7 @@ export const FETCHSUCCESSUSERDIARY = (data: any) => {
   };
 };
 
-export const fetchData = () => {
+export const fetchDataChart = () => {
   return (dispatch: any) => {
     dispatch(FETCHREQ);
 

@@ -14,8 +14,8 @@ import "react-datepicker/dist/react-datepicker.css";
 
 import {connect} from 'react-redux';
 
-// import {fetchDataChart} from '../../redux/DatAlta/DataAltaActions'
-export default function DetailService({ dataTableRedux, fetchDataChart }: any) {
+import {fetchDataChart} from '../../../redux/DataAlta/DataAltaActions'
+function DetailService({ dataTableRedux, fetchDataChart }: any) {
   useEffect(() => {
     fetchDataChart();
   }, []);
@@ -276,18 +276,18 @@ export default function DetailService({ dataTableRedux, fetchDataChart }: any) {
   );
 }
 
-// const mapStateToProps = (state:any) =>{
-//         return {
-//           dataTableRedux:state.dataAlta
+const mapStateToProps = (state:any) =>{
+        return {
+          dataTableRedux:state.dataAlta
 
-//         }
-//       }
+        }
+      }
 
-//   const mapDispatchToProps = (dispatch:any) =>{
-//     return {
-//             fetchDataChart: ()=>  dispatch(fetchDataChart()),
+  const mapDispatchToProps = (dispatch:any) =>{
+    return {
+            fetchDataChart: ()=>  dispatch(fetchDataChart()),
 
-//     }
-//   }
+    }
+  }
 
-//   export default connect(mapStateToProps,mapDispatchToProps)(DetailService)
+  export default connect(mapStateToProps,mapDispatchToProps)(DetailService)
